@@ -5,9 +5,9 @@ Version 0.9
 Authors: Xindan Xu and Anton Karl Ingason
 
 
-IceFlash 4K contains a composed dataset of 4,000 most common Icelandic words according to the [Tagged Icelandic Corpus](http://www.malfong.is/index.php?lang=en&pg=mim), along with a printable pdf-version and digital Anki-version of the flashcards.
+IceFlash 4K contains a composed dataset of the 4,000 most common Icelandic words according to the [Tagged Icelandic Corpus](http://www.malfong.is/index.php?lang=en&pg=mim), along with a printable pdf-version and a digital Anki-version of the flashcards.
 
-The dataset contains a variety of information about each vocabulary item, such as its frequency and rank in the corpus, part-of-speech tag, English and Polish translation, a sample sentence to show the usage of the word in context, phonetic transcription, and selected conjugation forms in respect to its' word category.
+The dataset contains a variety of information about each vocabulary item, such as its frequency and rank in the corpus, part-of-speech tag, English and Polish translation, a sample sentence to show the usage of the word in context, phonetic transcription, and selected conjugation forms in respect to its word category.
 
 Below is a list of the resources used in the process:
 
