@@ -1,0 +1,158 @@
+\documentclass[frontgrid, backgrid]{flacards}
+
+\usepackage{xcolor}
+\usepackage{graphicx, tikz}
+
+
+
+\newlength{\cardwidthspace}
+\newlength{\cardheightspace}
+\newlength{\cardmargin}
+\setlength{\cardmargin}{0pt}% default => two side printing <<<<<<<<<<<<<<<
+
+\setlength{\cardwidthspace}{18pt} % add right horizontal space
+\setlength{\cardheightspace}{20pt}% add upper vertical space
+
+% \setlength{\cardmargin}{\cardwidthspace}  % use for one side printing <<<<<<<<<<<<<<<           
+
+\usepackage{etoolbox}   % for the patch 
+\patchcmd{\card}
+{\front\noindent\begin{picture}(0,0)}
+{\front\noindent\begin{picture}(0,0)\advance\cardwidth by -\cardwidthspace\relax\advance\cardheight by -\cardheightspace\relax}
+{}{}
+
+\patchcmd{\card}
+{\back\noindent\begin{picture}(0,0)}
+{\back\noindent\begin{picture}(0,0)%
+        \advance\cardwidth by -\cardwidthspace\relax%
+        \advance\cardheight by -\cardheightspace\relax%
+        \advance\@tempdimb by \cardmargin\relax% 
+    }
+{}{}
+
+
+\usepackage[icelandic]{babel}
+\usepackage{fontspec}
+    \defaultfontfeatures{Scale = MatchLowercase}
+    \newfontfamily\ipafont{Charis SIL}
+
+\DeclareTextFontCommand\textphonetic{\ipafont}
+
+\fboxsep=5mm
+
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{booktabs}
+
+\definecolor{creamy}{RGB}{255, 253, 208}
+\definecolor{mustard}{RGB}{237, 165, 49}
+
+
+%%\pagecolor{creamy}
+
+\newcommand{\frontcard}[1]{\textcolor{light-gray}{\colorbox{light-gray}{$#1$}}}
+\newcommand{\backcard}[1]{#1}
+
+%% add front logo
+\renewcommand{\flfoot}{\fboxsep=0pt {\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=center, opacity=0.4] at (1.0, 0.5){%
+    \includegraphics[scale=0.18]{logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
+}
+% 
+% 
+% %% add back logo
+% \renewcommand{\blfoot}{\fboxsep=0pt {\begin{tikzpicture}[remember picture, overlay]
+%     \node[anchor=center, opacity=0.2] at (1.0, 0.5){%
+%     \includegraphics[scale=0.18]{logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
+% }
+
+% \renewcommand{\blfoot}{\fboxsep=0pt {\begin{tikzpicture}[remember picture, overlay]
+%     \node[anchor=center, opacity=0.1] at (4.5, 2.8){%
+%     \includegraphics[scale=0.7]{logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}%
+% %\includegraphics[scale=0.3]{logo/rannsoknarstofa_logo_blackOnWhite.pdf}
+% }
+
+
+
+\renewcommand{\cardtextstylef}{\ttfamily \bfseries \large}
+\renewcommand{\cardtextstyleb}{\ttfamily \bfseries \large}
+
+\newcommand{\flashcard}[1]{% create new command for cards with blanks
+    \card{% call the original \card command with twice the same argument (#1)
+        \let\blank\frontcard% but let \blank behave like \frontcard the first time
+        #1
+    }{%
+        \let\blank\backcard% and like \backcard the second time
+        #1
+    }%
+}
+
+
+%% load data
+<<loaddata, echo=FALSE, message=FALSE>>=
+df <- base.df[base.df$tier == tier,]
+@
+
+
+\begin{document}
+\doublespacing
+
+
+\pagesetup{2}{4} 
+
+
+%% set global options for knitr
+<<setup, include=FALSE, cache=FALSE>>=
+library(knitr)
+# library(readr)
+# library(tidyverse)
+# library(ipa)
+# set global chunk options
+
+opts_chunk$set(echo=F,
+               message = F
+               )
+#options(formatR.arrow=TRUE,width=90)
+@
+
+
+%% load data
+<<runn-all, include=FALSE>>=
+
+out = NULL
+
+
+#lan <- 'pl.'
+#lan <- 'pl.'
+
+lan <- "en" ## change this according the language used
+
+for (i in 1:nrow(df)){
+        if (df$OBEYGJANLEGT[i] != ""){
+            out = c(out, knit_child('../templates/pdf/obeyg.rnw'))
+        } else if (df$bin_tag[i] == "so"){
+            out = c(out, knit_child('../templates/pdf/so.rnw'))
+        } else if (df$bin_tag[i] == "afn"){
+            out = c(out, knit_child('../templates/pdf/afn.rnw'))
+        } else if (df$bin_tag[i] == "lo" & df$OBEYGJANLEGT[i] == ""){
+            out = c(out, knit_child('../templates/pdf/lo.rnw'))
+        } else if (df$bin_tag[i] == "ao"){
+            out = c(out, knit_child('../templates/pdf/ao.rnw'))
+        } else if (df$bin_tag[i] %in% c('kk', 'kvk', 'hk', 'pfn')){
+            out = c(out, knit_child('../templates/pdf/no_pfn.rnw'))
+        } else if (df$bin_tag[i] %in% c('fn', 'gr', 'rt', 'to')){
+            out = c(out, knit_child('../templates/pdf/fn_gr_to.rnw'))
+        } else {
+            print(df[i,])
+    }
+    
+}   
+
+@
+
+
+\Sexpr{paste(out, collapse = '\n')}
+
+\end{document}

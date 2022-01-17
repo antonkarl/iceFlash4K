@@ -1,0 +1,16 @@
+## no_pfn
+name: '{{full_cat}}'
+
+qfmt: "<p class=\"header\">{{full_cat}} | {{full_cat_en}}</p><br>
+        <h3>{{lemma}} <sub>({{bin_tag}})</sub></h3> <br/>
+        <p>{{pre_kw}} <u><font color='red'>{{kw}}</font></u> {{post_kw}}</p> <br/>
+        <p class=\"header\">{{tier}}</p>" 
+
+afmt: "{{FrontSide}}<hr id=\"answer\">
+        <p class=\"header\">{{full_cat}} | {{full_cat_en}}</p><br>
+        <h3>{{lemma}} <sub>({{bin_tag}})</sub></h3><br>
+        [{{ipa_sd}}] {{pronounce}} <br/>
+        <p>pl. {{manual_pl}}</p> <br/>
+        et.(singular): {{lemma}} -- (frá) {{ÞGFET}} -- (til) {{EFET}} <br/>
+        ft.(plural): {{NFFT}} -- (frá) {{ÞGFFT}} -- (til) {{EFFT}} <br/>
+        <p class=\"header\">{{tier}}</p>"

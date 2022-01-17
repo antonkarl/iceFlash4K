@@ -1,0 +1,16 @@
+%% Set front head & back foot for dfs
+
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize \Sexpr{df$full_cat[i]} | \Sexpr{df$full_cat_en[i]}}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize \Sexpr{df$tier[i]}}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize \Sexpr{df$full_cat[i]} | \Sexpr{df$full_cat_en[i]} }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize \Sexpr{df$tier[i]}}}
+
+
+%% card templates
+\card{\Large{\Sexpr{df$lemma[i]}} \normalsize{\textsubscript{(\textit{\Sexpr{df$bin_tag_en[i]}})}} \\ [2ex]
+{\Sexpr{df$pre_kw[i]} \textcolor{red}{\underline{\Sexpr{df$kw[i]}}} \Sexpr{df$post_kw[i]} }}
+{\Sexpr{df$lemma[i]} \small{\textsubscript{(\textit{\Sexpr{df$bin_tag_en[i]}})}} \\[1ex]
+\textphonetic{[\Sexpr{df$ipa_sd[i]}]} \\
+\Sexpr{lan}: \emph{\Sexpr{df$manual[i]}} \\  [2ex]
+\Sexpr{df$lemma[i]} (Indeclinable)}

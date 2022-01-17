@@ -1,0 +1,17 @@
+## lo
+name: '{{full_cat}}'
+
+qfmt: "<p class=\"header\">{{full_cat}} | {{full_cat_en}}</p>
+        <h3>{{lemma}} <sub>({{bin_tag}})</sub></h3> <br/>
+        <p>{{pre_kw}} <u><font color='red'>{{kw}}</font></u> {{post_kw}}</p> <br/>
+        <p class=\"header\">{{tier}}</p>"
+        
+afmt: "{{FrontSide}}<hr id=\"answer\">
+        <p class=\"header\">{{full_cat}} | {{full_cat_en}}</p>
+        <h3>{{lemma}} <sub>({{bin_tag}})</sub></h3><br/>
+        <p>[{{ipa_sd}}] {{pronounce}} </p><br/>
+        <p>pl. {{manual_pl}}</p> <br/>
+        <p>fst.(positive degree): {{fst}} </p><br/>
+        <p>mst.(comparative degree): {{mst}} </p><br/>
+        <p>est.(superlative degree): {{est}} </p> <br/>
+        <p class=\"header\">{{tier}}</p>"
