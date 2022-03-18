@@ -2,15 +2,25 @@
 name: '{{full_cat}}'
 
 qfmt: "<p class=\"header\">{{full_cat}} | {{full_cat_en}}</p>
-        <h3>{{lemma}} <sub>({{bin_tag}})</sub></h3> <br/>
-        <p>{{pre_kw}} <u><font color='red'>{{kw}}</font></u> {{post_kw}}</p> <br/>
-        <p class=\"header\">{{tier}}</p>" 
+        <h3>{{lemma}} <sub>(<i>{{bin_tag_en}}</i>)</sub></h3>
+        <p>{{pre_kw}} <u><font color='red'>{{kw}}</font></u> {{post_kw}}</p>
+        <p class=\"header\">{{tier}}</p>"
         
 afmt: "{{FrontSide}}<hr id=\"answer\">
         <p class=\"header\">{{full_cat}} | {{full_cat_en}}</p>
-        <h3>{{lemma}} <sub>({{bin_tag}})</sub></h3> <br/>
-        <p>[{{ipa_sd}}] {{pronounce}}</p> <br/>
-        <p>pl. {{manual_pl}}</p> <br/>
-        <p>et.(singular): {{et}} </p> <br/> 
-        <p>ft.(plural): {{ft}} </p> <br/>
+        <h3>{{lemma}} <sub>(<i>{{bin_tag_en}}</i>)</sub></h3>
+        <p>[{{ipa_sd}}] {{pronounce}} </p>
+        <p>pl. {{manual_pl}}</p>
+        <p>
+        <table class=\"table\">
+            <tr>
+              <td class=\"td\"> sg.nom.:</td>
+              <td> {{et}} </td>
+            </tr>
+            <tr>
+             <td class=\"td\"> pl.nom.:</td>
+             <td>{{ft}}</td>
+            </tr>
+        </table>
+        </p>
         <p class=\"header\">{{tier}}</p>"

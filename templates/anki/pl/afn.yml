@@ -2,16 +2,20 @@
 name: '{{full_cat}}'
 
 qfmt: "<p class=\"header\">{{full_cat}} | {{full_cat_en}}</p><br>
-        <h3>{{lemma}} <sub>({{bin_tag}})</sub></h3> <br/>
-        <p>{{pre_kw}} <u><font color='red'>{{kw}}</font></u> {{post_kw}}</p> <br/>
+        <h3>{{lemma}} <sub>({{bin_tag_en}})</sub></h3>
+        <p>{{pre_kw}} <u><font color='red'>{{kw}}</font></u> {{post_kw}}</p>
         <p class=\"header\">{{tier}}</p>" 
 
 afmt: "{{FrontSide}}<hr id=\"answer\">
-        <p class=\"header\">{{full_cat}} | {{full_cat_en}}</p><br>
-        <h3>{{lemma}} <sub>({{bin_tag}})</sub></h3><br>
-        [{{ipa_sd}}] {{pronounce}} <br/>
-        <p>pl. {{manual_pl}}</p> <br/>
-        (um) {{ÞF}} <br/>
-        (frá) {{ÞGF}} <br/>
-        (til) {{EF}} <br/>
+        <p class=\"header\">{{full_cat}} | {{full_cat_en}}</p>
+        <h3>{{lemma}} <sub>({{bin_tag_en}})</sub></h3>
+        [{{ipa_sd}}] {{pronounce}}
+        <p>pl. {{manual_pl}}</p>
+        <p>
+        <table class=\"table\">
+          <tr>
+            <td> (um) {{ÞF}} -- (frá) {{ÞGF}} -- (til) {{EF}} </td>
+          </tr>
+        </table>
+        </p>
         <p class=\"header\">{{tier}}</p>"
