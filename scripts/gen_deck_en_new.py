@@ -9,9 +9,9 @@ import yaml
 
 
 ## define file path  
-project_dir = '/Users/xindanx./Maltaekni/flashcards'
-output_dir = '/Users/xindanx./Maltaekni/flashcards/demo'
-audio_dir = '/Users/xindanx./Maltaekni/flashcards/mp3files'
+project_dir = '.'
+output_dir = '.'
+audio_dir = '/mp3files'
 
 ## always start from cwd
 os.chdir(project_dir)
@@ -28,22 +28,6 @@ style = """
         background-color: white;
       }
       
-      # .card::before {
-      #   content: "";
-      #   position: fixed;
-      #   left: 0;
-      #   right: 0;
-      #   z-index: -1;
-      #     
-      #   display: block;
-      #   background-image: url("_rannsoknarstofa_logo_blackOnTransparent.png");
-      #   background-size: 50%;
-      #   height: 100%; width: 100%;
-      #   background-position: left bottom;
-      #   opacity: 0.1;
-      #   background-repeat: no-repeat;
-      #   
-      # }
 
       .header {
         text-align: left;
@@ -90,19 +74,16 @@ my_deck = genanki.Deck(
   deck_id=gen_id(),
   name = "IceFlash4k_en_v2")
 
-# my_deck_test = genanki.Deck(
-#   deck_id=gen_id(),
-#   name = "ordlist_4k::test")
 
 ## generate Anki decks
 mp3_path = glob.glob('mp3files/*')
 mp3_names = sorted([mp3.split(os.sep)[-1] for mp3 in mp3_path])
 
 ## load templates
-tmp_dir = glob.glob('templates_en_new/*.yml')
+tmp_dir = glob.glob('templates/anki/en/*.yml')
 
 ## load data and generate cards
-tsvfile = "output_v2/list_4k_en.tsv"
+tsvfile = "data/list_4k_en.tsv"
 with open(tsvfile, 'r', encoding='utf-8') as file:
   csv_reader = csv.DictReader(file, delimiter = '\t')
   model_field = [{'name': name} for name in csv_reader.fieldnames]
@@ -147,8 +128,7 @@ with open(tsvfile, 'r', encoding='utf-8') as file:
     ## create notes 
     note = genanki.Note(
         model = card_model,
-        fields = list(row.values()),
-        tags = [row['full_cat'], row['tier']]
+        fields = list(row.values())
         )
     my_deck.add_note(note)
 
