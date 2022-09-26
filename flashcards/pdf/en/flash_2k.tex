@@ -1,4 +1,4 @@
-\documentclass[frontgrid, backgrid]{flacards}\usepackage[]{graphicx}\usepackage[]{color}
+\documentclass[frontgrid, backgrid]{flacards}\usepackage[]{graphicx}\usepackage[]{xcolor}
 % maxwidth is the original width if it is less than linewidth
 % otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
@@ -108,7 +108,7 @@
 %% add front logo
 \renewcommand{\flfoot}{\fboxsep=0pt {\begin{tikzpicture}[remember picture, overlay]
     \node[anchor=center, opacity=0.4] at (1.0, 0.5){%
-    \includegraphics[scale=0.18]{logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
+    \includegraphics[scale=0.18]{../logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
 }
 % 
 % 
@@ -1143,10 +1143,10 @@ en: \emph{manuscript} \\  [2ex]
 {Hann var til dæmis í \textcolor{red}{\underline{fjórða}} sæti allt árið í fyrra. }}
 {fjórði \small{\textsubscript{(\textit{num.})}} \\[1ex] %% back side
 \textphonetic{[fjourðɪ]} \\
-en: \emph{} \\  [2ex]
+en: \emph{fourth} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & fjórði  --  fjórða -- fjórða \\ 
+\textsc{sg.nom.}: & fjórði  --  fjórða -- fjórða \\ 
 \textsc{pl.nom.}: & fjórðu -- fjórðu -- fjórðu
 \end{tabular}
 }
@@ -4108,7 +4108,7 @@ en: \emph{respect} \\  [2ex]
 {Við ætlum að sækja um \textcolor{red}{\underline{aðild}} að Evrópusambandinu strax eftir kosningar. }}
 {aðild \small{\textsubscript{(\textit{f.})}} \\[1ex] %% back side
 \textphonetic{[aːðɪlt]} \\
-en: \emph{affiliation, participation, membership,} \\  [2ex]
+en: \emph{affiliation, participation, membership} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \makebox[0.9\cardwidth]{
 \begin{tabular}{l l}
@@ -7989,7 +7989,7 @@ en: \emph{capital, money; budget} \\  [2ex]
 {Hún segir að Perlan \textcolor{red}{\underline{henti}} vel sem sýningarrými. }} 
 {henda \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
 \textphonetic{[hɛnta]} \\
-en: \emph{throw; chuch} \\  [2ex]
+en: \emph{throw; chuck} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{p{1cm}l}
 \textsc{1sg}: & hendi -- henti -- hent \\ 
@@ -8455,6 +8455,50 @@ en: \emph{chrash, bang, collide} \\  [2ex]
 \textsc{1sg}: & skell -- skall -- skollið \\ 
 \textsc{2sg}: & skellur -- skallst -- skollið \\ 
 \textsc{3sg}: & skellur -- skall -- skollið \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 2K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 2K}}
+
+
+%% card templates
+\card{\Large{skella} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Vélin \textcolor{red}{\underline{skall}} á húsi á eyjunni Jövu. }} 
+{skella \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[scɛtla]} \\
+en: \emph{chrash, bang, collide} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & skell -- skall -- skollið \\ 
+\textsc{2sg}: & skellur -- skallst -- skollið \\ 
+\textsc{3sg}: & skellur -- skall -- skollið \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 2K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 2K}}
+
+
+%% card templates
+\card{\Large{skella} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Þar var haldið gömludansaball og fólk \textcolor{red}{\underline{skellti}} sér í aldamótaklæði. }} 
+{skella \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[scɛtla]} \\
+en: \emph{slam sth; ('skella sér') go for sth} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & skelli -- skellti -- skellt \\ 
+\textsc{2sg}: & skellir -- skelltir -- skellt \\ 
+\textsc{3sg}: & skellir -- skellti -- skellt \\ 
 \end{tabular}
 }
 
@@ -10669,6 +10713,50 @@ en: \emph{burn, be on fire} \\  [2ex]
 \textsc{1sg}: & brenn -- brann -- brunnið \\ 
 \textsc{2sg}: & brennur -- brannst -- brunnið \\ 
 \textsc{3sg}: & brennur -- brann -- brunnið \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 2K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 2K}}
+
+
+%% card templates
+\card{\Large{brenna} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Húsið \textcolor{red}{\underline{brann}} til kaldra kola. }} 
+{brenna \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[prɛna]} \\
+en: \emph{burn, be on fire} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & brenn -- brann -- brunnið \\ 
+\textsc{2sg}: & brennur -- brannst -- brunnið \\ 
+\textsc{3sg}: & brennur -- brann -- brunnið \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 2K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 2K}}
+
+
+%% card templates
+\card{\Large{brenna} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Ég átti dýnu en ég \textcolor{red}{\underline{brenndi}} hana. }} 
+{brenna \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[prɛna]} \\
+en: \emph{burn, set on fire} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & brenni -- brenndi -- brennt \\ 
+\textsc{2sg}: & brennir -- brenndir -- brennt \\ 
+\textsc{3sg}: & brennir -- brenndi -- brennt \\ 
 \end{tabular}
 }
 
@@ -14005,10 +14093,10 @@ en: \emph{appeal} \\  [2ex]
 {Þetta er \textcolor{red}{\underline{fimmti}} fundurinn á jafnmörgum dögum í vikunni. }}
 {fimmti \small{\textsubscript{(\textit{num.})}} \\[1ex] %% back side
 \textphonetic{[fɪm̥tɪ]} \\
-en: \emph{} \\  [2ex]
+en: \emph{fifth} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & fimmti  --  fimmta -- fimmta \\ 
+\textsc{sg.nom.}: & fimmti  --  fimmta -- fimmta \\ 
 \textsc{pl.nom.}: & fimmtu -- fimmtu -- fimmtu
 \end{tabular}
 }
@@ -14403,10 +14491,10 @@ en: \emph{member (of a society)} \\  [2ex]
 {Hún segir það ótrúlega tilfinningu að hafa lent í \textcolor{red}{\underline{öðru}} sæti. }}
 {annar \small{\textsubscript{(\textit{num.})}} \\[1ex] %% back side
 \textphonetic{[anar]} \\
-en: \emph{} \\  [2ex]
+en: \emph{second} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & annar  --  önnur -- annað \\ 
+\textsc{sg.nom.}: & annar  --  önnur -- annað \\ 
 \textsc{pl.nom.}: & aðrir -- aðrar -- önnur
 \end{tabular}
 }
@@ -16789,7 +16877,7 @@ en: \emph{farm; estate} \\  [2ex]
 en: \emph{a few} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & fáeinir  -- \\ 
+\textsc{sg.nom.}: & fáeinir  -- \\ 
 \textsc{pl.nom.}: & fáeinir -- fáeinar -- fáein
 \end{tabular}
 }

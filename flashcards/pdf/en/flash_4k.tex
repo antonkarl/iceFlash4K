@@ -1,4 +1,4 @@
-\documentclass[frontgrid, backgrid]{flacards}\usepackage[]{graphicx}\usepackage[]{color}
+\documentclass[frontgrid, backgrid]{flacards}\usepackage[]{graphicx}\usepackage[]{xcolor}
 % maxwidth is the original width if it is less than linewidth
 % otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
@@ -108,7 +108,7 @@
 %% add front logo
 \renewcommand{\flfoot}{\fboxsep=0pt {\begin{tikzpicture}[remember picture, overlay]
     \node[anchor=center, opacity=0.4] at (1.0, 0.5){%
-    \includegraphics[scale=0.18]{logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
+    \includegraphics[scale=0.18]{../logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
 }
 % 
 % 
@@ -173,7 +173,7 @@
 {Þeir hafi enga \textcolor{red}{\underline{afsökun}} . }}
 {afsökun \small{\textsubscript{(\textit{f.})}} \\[1ex] %% back side
 \textphonetic{[afsœkʏn]} \\
-en: \emph{excuse; applogy} \\  [2ex]
+en: \emph{excuse; apology} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \makebox[0.9\cardwidth]{
 \begin{tabular}{l l}
@@ -1162,10 +1162,10 @@ en: \emph{allowed, permissible} \\  [2ex]
 {Skipið lagði úr höfn á \textcolor{red}{\underline{tíunda}} tímanum í gærkvöldi. }}
 {tíundi \small{\textsubscript{(\textit{num.})}} \\[1ex] %% back side
 \textphonetic{[tʰijʏntɪ]} \\
-en: \emph{} \\  [2ex]
+en: \emph{tenth} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & tíundi  --  tíunda -- tíunda \\ 
+\textsc{sg.nom.}: & tíundi  --  tíunda -- tíunda \\ 
 \textsc{pl.nom.}: & tíundu -- tíundu -- tíundu
 \end{tabular}
 }
@@ -3607,6 +3607,50 @@ en: \emph{sink, go down} \\  [2ex]
 \textsc{1sg}: & sekk -- sökk -- sokkið \\ 
 \textsc{2sg}: & sekkur -- sökkst -- sokkið \\ 
 \textsc{3sg}: & sekkur -- sökk -- sokkið \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 4K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 4K}}
+
+
+%% card templates
+\card{\Large{sökkva} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Báturinn brann svo stafna á milli og \textcolor{red}{\underline{sökk}} . }} 
+{sökkva \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[sœhkva]} \\
+en: \emph{sink, go down} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & sekk -- sökk -- sokkið \\ 
+\textsc{2sg}: & sekkur -- sökkst -- sokkið \\ 
+\textsc{3sg}: & sekkur -- sökk -- sokkið \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 4K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 4K}}
+
+
+%% card templates
+\card{\Large{sökkva} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Þeir hafi \textcolor{red}{\underline{sökkt}} minnst einu skipi stjórnarhersins. }} 
+{sökkva \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[sœhkva]} \\
+en: \emph{sink sth} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & sökkvi -- sökkti -- sökkt \\ 
+\textsc{2sg}: & sökkvir -- sökktir -- sökkt \\ 
+\textsc{3sg}: & sökkvir -- sökkti -- sökkt \\ 
 \end{tabular}
 }
 
@@ -10265,10 +10309,10 @@ en: \emph{carbohydrate} \\  [2ex]
 {Ísland er í \textcolor{red}{\underline{nítjánda}} sæti. }}
 {nítjándi \small{\textsubscript{(\textit{num.})}} \\[1ex] %% back side
 \textphonetic{[niːtjauntɪ]} \\
-en: \emph{} \\  [2ex]
+en: \emph{nineteenth} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & nítjándi  --  nítjánda -- nítjánda \\ 
+\textsc{sg.nom.}: & nítjándi  --  nítjánda -- nítjánda \\ 
 \textsc{pl.nom.}: & nítjándu -- nítjándu -- nítjándu
 \end{tabular}
 }
@@ -14231,28 +14275,6 @@ en: \emph{entrance} \\  [2ex]
 
 
 %% card templates
-\card{\Large{innganga} \normalsize{\textsubscript{(\textit{f.})}} \\ [2ex]
-{Vandi þjóðarinnar myndi ekki leysast með \textcolor{red}{\underline{inngöngu}} í sambandið. }}
-{innganga \small{\textsubscript{(\textit{f.})}} \\[1ex] %% back side
-\textphonetic{[ɪnkauŋka]} \\
-en: \emph{entrance} \\  [2ex]
-\renewcommand*{\arraystretch}{0.8}
-\makebox[0.9\cardwidth]{
-\begin{tabular}{l l}
-\textsc{sg}: & (frá) inngöngu -- (til) inngöngu \\ 
-\textsc{pl}: & (frá)  -- (til)  \\
-\end{tabular}}
-}
-
-%% Set front head & back foot for dfs
-\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Nafnorð | Noun}}
-\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 4K}}
-
-\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Nafnorð | Noun }}
-\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 4K}}
-
-
-%% card templates
 \card{\Large{lofthjúpur} \normalsize{\textsubscript{(\textit{m.})}} \\ [2ex]
 {Ekki er talið líklegt að aska berist upp í \textcolor{red}{\underline{lofthjúpinn}} . }}
 {lofthjúpur \small{\textsubscript{(\textit{m.})}} \\[1ex] %% back side
@@ -15317,6 +15339,50 @@ en: \emph{demand} \\  [2ex]
 \textsc{1sg}: & heimta -- heimtaði -- heimtað \\ 
 \textsc{2sg}: & heimtar -- heimtaðir -- heimtað \\ 
 \textsc{3sg}: & heimtar -- heimtaði -- heimtað \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 4K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 4K}}
+
+
+%% card templates
+\card{\Large{heimta} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Í eina tíð \textcolor{red}{\underline{heimtuðu}} menn lífeyrissjóð fyrir alla landsmenn. }} 
+{heimta \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[heim̥ta]} \\
+en: \emph{demand} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & heimta -- heimtaði -- heimtað \\ 
+\textsc{2sg}: & heimtar -- heimtaðir -- heimtað \\ 
+\textsc{3sg}: & heimtar -- heimtaði -- heimtað \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 4K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 4K}}
+
+
+%% card templates
+\card{\Large{heimta} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Fyrir þetta segir bóndinn að Umhverfisstofnun \textcolor{red}{\underline{heimti}} nú 38.000 krónur. }} 
+{heimta \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[heim̥ta]} \\
+en: \emph{get sth, get sth back} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & heimti -- heimti -- heimt \\ 
+\textsc{2sg}: & heimtir -- heimtir -- heimt \\ 
+\textsc{3sg}: & heimtir -- heimti -- heimt \\ 
 \end{tabular}
 }
 
@@ -17293,7 +17359,7 @@ en: \emph{sad; bored} \\  [2ex]
 en: \emph{(archaic) ours, our} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & vor  --  vor -- vort \\ 
+\textsc{sg.nom.}: & vor  --  vor -- vort \\ 
 \textsc{pl.nom.}: & vorir -- vorar -- vor
 \end{tabular}
 }
@@ -24375,7 +24441,7 @@ en: \emph{exercise; fitness training} \\  [2ex]
 
 %% card templates
 \card{\Large{refsa} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
-{Þannig er ekki hægt að \textcolor{red}{\underline{refsa}} mönnum fyrir að segja fréttir. }} 
+{Þannig er ekki hægt að \textcolor{red}{\underline{refsa}} mönnum fyrir að segja fréttir. }} 
 {refsa \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
 \textphonetic{[rɛfsa]} \\
 en: \emph{punish} \\  [2ex]
@@ -24397,7 +24463,7 @@ en: \emph{punish} \\  [2ex]
 
 %% card templates
 \card{\Large{skinn} \normalsize{\textsubscript{(\textit{n.})}} \\ [2ex]
-{Ein geit gefur af sér mjólk og \textcolor{red}{\underline{skinn}} og jafnvel kjöt. }}
+{Ein geit gefur af sér mjólk og \textcolor{red}{\underline{skinn}} og jafnvel kjöt. }}
 {skinn \small{\textsubscript{(\textit{n.})}} \\[1ex] %% back side
 \textphonetic{[scɪn]} \\
 en: \emph{skin; fur} \\  [2ex]
@@ -24419,7 +24485,7 @@ en: \emph{skin; fur} \\  [2ex]
 
 %% card templates
 \card{\Large{varnarlið} \normalsize{\textsubscript{(\textit{n.})}} \\ [2ex]
-{Þær eru með gott \textcolor{red}{\underline{varnarlið}} eins og við. }}
+{Þær eru með gott \textcolor{red}{\underline{varnarlið}} eins og við. }}
 {varnarlið \small{\textsubscript{(\textit{n.})}} \\[1ex] %% back side
 \textphonetic{[vartnarlɪð]} \\
 en: \emph{defense force} \\  [2ex]
@@ -24441,7 +24507,7 @@ en: \emph{defense force} \\  [2ex]
 
 %% card templates
 \card{\Large{eftirsóknarverður} \normalsize{\textsubscript{(\textit{adj.})}} \\ [2ex]
-{Sú þróun er að mörgu leyti \textcolor{red}{\underline{eftirsóknarverð}} . }}
+{Sú þróun er að mörgu leyti \textcolor{red}{\underline{eftirsóknarverð}} . }}
 {eftirsóknarverður \small{\textsubscript{(\textit{adj.})}} \\[1ex] %% back side
 \textphonetic{[ɛftɪr̥souhknarvɛrðʏr]} \\
 en: \emph{desirable} \\  [2ex]

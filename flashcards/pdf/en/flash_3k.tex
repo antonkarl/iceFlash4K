@@ -1,4 +1,4 @@
-\documentclass[frontgrid, backgrid]{flacards}\usepackage[]{graphicx}\usepackage[]{color}
+\documentclass[frontgrid, backgrid]{flacards}\usepackage[]{graphicx}\usepackage[]{xcolor}
 % maxwidth is the original width if it is less than linewidth
 % otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
@@ -108,7 +108,7 @@
 %% add front logo
 \renewcommand{\flfoot}{\fboxsep=0pt {\begin{tikzpicture}[remember picture, overlay]
     \node[anchor=center, opacity=0.4] at (1.0, 0.5){%
-    \includegraphics[scale=0.18]{logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
+    \includegraphics[scale=0.18]{../logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
 }
 % 
 % 
@@ -496,10 +496,10 @@ en: \emph{potato} \\  [2ex]
 {Þetta er í \textcolor{red}{\underline{sjöunda}} sinn sem jólaþorpið rís. }}
 {sjöundi \small{\textsubscript{(\textit{num.})}} \\[1ex] %% back side
 \textphonetic{[sjœːʏntɪ]} \\
-en: \emph{} \\  [2ex]
+en: \emph{seventh} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & sjöundi  --  sjöunda -- sjöunda \\ 
+\textsc{sg.nom.}: & sjöundi  --  sjöunda -- sjöunda \\ 
 \textsc{pl.nom.}: & sjöundu -- sjöundu -- sjöundu
 \end{tabular}
 }
@@ -1281,7 +1281,7 @@ en: \emph{theoretical} \\  [2ex]
 {Piltarnir tóku á \textcolor{red}{\underline{rás}} en einn þeirra náðist á hlaupum. }}
 {rás \small{\textsubscript{(\textit{f.})}} \\[1ex] %% back side
 \textphonetic{[rauːs]} \\
-en: \emph{chanel; course} \\  [2ex]
+en: \emph{channel; course} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \makebox[0.9\cardwidth]{
 \begin{tabular}{l l}
@@ -3217,6 +3217,50 @@ en: \emph{sprint; open a seam} \\  [2ex]
 \textsc{1sg}: & spretti -- spretti -- sprett \\ 
 \textsc{2sg}: & sprettir -- sprettir -- sprett \\ 
 \textsc{3sg}: & sprettir -- spretti -- sprett \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+
+%% card templates
+\card{\Large{spretta} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Um 13 hundruð manns \textcolor{red}{\underline{sprettu}} úr spori í hálfu maraþoni. }} 
+{spretta \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[sprɛhta]} \\
+en: \emph{sprint; open a seam} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & spretti -- spretti -- sprett \\ 
+\textsc{2sg}: & sprettir -- sprettir -- sprett \\ 
+\textsc{3sg}: & sprettir -- spretti -- sprett \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+
+%% card templates
+\card{\Large{spretta} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Málið sé \textcolor{red}{\underline{sprottið}} af óánægju vegna lekamálsins svo kallaða. }} 
+{spretta \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[sprɛhta]} \\
+en: \emph{grow, sprout; spring} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & sprett -- spratt -- sprottið \\ 
+\textsc{2sg}: & sprettur -- sprast -- sprottið \\ 
+\textsc{3sg}: & sprettur -- spratt -- sprottið \\ 
 \end{tabular}
 }
 
@@ -5612,7 +5656,7 @@ ellefu (Indeclinable)}
 en: \emph{such, what} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & þvílíkur  --  þvílík -- þvílíkt \\ 
+\textsc{sg.nom.}: & þvílíkur  --  þvílík -- þvílíkt \\ 
 \textsc{pl.nom.}: & þvílíkir -- þvílíkar -- þvílík
 \end{tabular}
 }
@@ -6041,10 +6085,10 @@ en: \emph{allocation} \\  [2ex]
 {Skipin koma væntanlega til hafnar núna á \textcolor{red}{\underline{níunda}} tímanum. }}
 {níundi \small{\textsubscript{(\textit{num.})}} \\[1ex] %% back side
 \textphonetic{[nijʏntɪ]} \\
-en: \emph{} \\  [2ex]
+en: \emph{ninth} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & níundi  --  níunda -- níunda \\ 
+\textsc{sg.nom.}: & níundi  --  níunda -- níunda \\ 
 \textsc{pl.nom.}: & níundu -- níundu -- níundu
 \end{tabular}
 }
@@ -6621,10 +6665,10 @@ en: \emph{member of the Independence Party} \\  [2ex]
 {Úrslitin verða síðan kynnt á \textcolor{red}{\underline{sjötta}} tímanum. }}
 {sjötti \small{\textsubscript{(\textit{num.})}} \\[1ex] %% back side
 \textphonetic{[sjœhtɪ]} \\
-en: \emph{} \\  [2ex]
+en: \emph{sixth} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & sjötti  --  sjötta -- sjötta \\ 
+\textsc{sg.nom.}: & sjötti  --  sjötta -- sjötta \\ 
 \textsc{pl.nom.}: & sjöttu -- sjöttu -- sjöttu
 \end{tabular}
 }
@@ -7131,6 +7175,50 @@ en: \emph{calm, soothe} \\  [2ex]
 \textsc{1sg}: & róa -- róaði -- róað \\ 
 \textsc{2sg}: & róar -- róaðir -- róað \\ 
 \textsc{3sg}: & róar -- róaði -- róað \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+
+%% card templates
+\card{\Large{róa} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Lögreglan skakkaði leikinn og \textcolor{red}{\underline{róaði}} íbúana. }} 
+{róa \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[rouːa]} \\
+en: \emph{calm, soothe} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & róa -- róaði -- róað \\ 
+\textsc{2sg}: & róar -- róaðir -- róað \\ 
+\textsc{3sg}: & róar -- róaði -- róað \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+
+%% card templates
+\card{\Large{róa} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Hann \textcolor{red}{\underline{rær}} frá Sandgerði og stundar sæbjúgnaveiðar. }} 
+{róa \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[rouːa]} \\
+en: \emph{row} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & ræ -- reri -- róið \\ 
+\textsc{2sg}: & rærð -- rerir -- róið \\ 
+\textsc{3sg}: & rær -- reri -- róið \\ 
 \end{tabular}
 }
 
@@ -8102,10 +8190,10 @@ en: \emph{carefully} \\  [2ex]
 {Þyrlan lenti í Reykjavík á \textcolor{red}{\underline{áttunda}} tímanum í morgun. }}
 {áttundi \small{\textsubscript{(\textit{num.})}} \\[1ex] %% back side
 \textphonetic{[auhtʏntɪ]} \\
-en: \emph{} \\  [2ex]
+en: \emph{eighth} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & áttundi  --  áttunda -- áttunda \\ 
+\textsc{sg.nom.}: & áttundi  --  áttunda -- áttunda \\ 
 \textsc{pl.nom.}: & áttundu -- áttundu -- áttundu
 \end{tabular}
 }
@@ -9349,10 +9437,10 @@ en: \emph{draw, sketch} \\  [2ex]
 {Verkið var talið málað í Þýskalandi snemma á \textcolor{red}{\underline{tuttugustu}} öld. }}
 {tuttugasti \small{\textsubscript{(\textit{num.})}} \\[1ex] %% back side
 \textphonetic{[tʰʏhtʏɣastɪ]} \\
-en: \emph{} \\  [2ex]
+en: \emph{twentieth} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & tuttugasti  --  tuttugasta -- tuttugasta \\ 
+\textsc{sg.nom.}: & tuttugasti  --  tuttugasta -- tuttugasta \\ 
 \textsc{pl.nom.}: & tuttugustu -- tuttugustu -- tuttugustu
 \end{tabular}
 }
@@ -9661,6 +9749,50 @@ en: \emph{click, snap} \\  [2ex]
 \textsc{1sg}: & smell -- small -- smollið \\ 
 \textsc{2sg}: & smellur -- smallst -- smollið \\ 
 \textsc{3sg}: & smellur -- small -- smollið \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+
+%% card templates
+\card{\Large{smella} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Þetta \textcolor{red}{\underline{small}} alveg eins og flís við rass. }} 
+{smella \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[smɛtla]} \\
+en: \emph{click, snap} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & smell -- small -- smollið \\ 
+\textsc{2sg}: & smellur -- smallst -- smollið \\ 
+\textsc{3sg}: & smellur -- small -- smollið \\ 
+\end{tabular}
+}
+
+%% Set front head & back foot for dfs
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | Verb}}
+\renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | Verb }}
+\renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
+
+
+%% card templates
+\card{\Large{smella} \normalsize{\textsubscript{(\textit{v.})}} \\ [2ex]
+{Hann \textcolor{red}{\underline{smellti}} boltanum í stöngina og inn í fjærhornið. }} 
+{smella \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
+\textphonetic{[smɛtla]} \\
+en: \emph{flick sth, snap sth (fingers)} \\  [2ex]
+\renewcommand*{\arraystretch}{0.8}
+\begin{tabular}{p{1cm}l}
+\textsc{1sg}: & smelli -- smellti -- smellt \\ 
+\textsc{2sg}: & smellir -- smelltir -- smellt \\ 
+\textsc{3sg}: & smellir -- smellti -- smellt \\ 
 \end{tabular}
 }
 
@@ -12668,7 +12800,7 @@ en: \emph{run; race; flood in a glacial river} \\  [2ex]
 en: \emph{every} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & sérhver  --  sérhver -- sérhvert \\ 
+\textsc{sg.nom.}: & sérhver  --  sérhver -- sérhvert \\ 
 \textsc{pl.nom.}: & sérhverjir -- sérhverjar -- sérhver
 \end{tabular}
 }
@@ -15987,7 +16119,7 @@ en: \emph{shift, watch} \\  [2ex]
 {Íslenska þjóðin hefur gefið \textcolor{red}{\underline{erfðaefni}} sitt til raðgreiningar og rannsókna. }}
 {erfðaefni \small{\textsubscript{(\textit{n.})}} \\[1ex] %% back side
 \textphonetic{[ɛrðaɛpnɪ]} \\
-en: \emph{genetic material, DNA} \\  [2ex]
+en: \emph{genetic material, D} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \makebox[0.9\cardwidth]{
 \begin{tabular}{l l}
@@ -18268,7 +18400,7 @@ en: \emph{musical instrument} \\  [2ex]
 en: \emph{neither} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & hvorugur  --  hvorug -- hvorugt \\ 
+\textsc{sg.nom.}: & hvorugur  --  hvorug -- hvorugt \\ 
 \textsc{pl.nom.}: & hvorugir -- hvorugar -- hvorug
 \end{tabular}
 }
@@ -19330,7 +19462,7 @@ en: \emph{swing} \\  [2ex]
 {Ekki er \textcolor{red}{\underline{útilokað}} að loftrýmisgæslu hér við land verði hætt. }}
 {útilokaður \small{\textsubscript{(\textit{adj.})}} \\[1ex] %% back side
 \textphonetic{[uːtɪlɔkaðʏr]} \\
-en: \emph{impossible; exluded} \\  [2ex]
+en: \emph{impossible; excluded} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \makebox[0.9\cardwidth]{
 \begin{tabular}{ll}
