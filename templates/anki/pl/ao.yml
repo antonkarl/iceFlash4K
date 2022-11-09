@@ -19,11 +19,11 @@ afmt: "{{FrontSide}}<hr id=\"answer\">
             </tr>
             <tr>
               <td class=\"td\"> cmpr:</td>
-              <td>{{MST+}}</td>
+              <td>{{MST}}</td>
             </tr>
             <tr>
              <td class=\"td\"> sup:</td>
-             <td>{{EST+}}</td>
+             <td>{{EST}}</td>
             </tr>
         </table>
         </p>
