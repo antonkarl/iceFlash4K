@@ -13,15 +13,15 @@ afmt: "{{FrontSide}}<hr id=\"answer\">
         <p>en. {{manual_en}}</p>
         <table class=\"table\">
             <tr>
-              <td class=\"td\"> 1sg:</td>
+              <td class=\"td\"> 1sg.</td>
               <td>{{verb_1st_pres}} -- {{verb_1st_past}} -- {{verb_lh_þt}}</td>
             </tr>
             <tr>
-              <td class=\"td\"> 2sg:</td>
+              <td class=\"td\"> 2sg.</td>
               <td>{{verb_2nd_pres}} -- {{verb_2nd_past}} -- {{verb_lh_þt}}</td>
             </tr>
             <tr>
-             <td class=\"td\"> 3sg:</td>
+             <td class=\"td\"> 3sg.</td>
              <td>{{verb_3rd_pres}} -- {{verb_3rd_past}} -- {{verb_lh_þt}}</td>
             </tr>
         </table>
