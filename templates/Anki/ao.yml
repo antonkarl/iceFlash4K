@@ -1,4 +1,4 @@
-## afn
+## ao
 name: '{{full_cat}}'
 
 qfmt: "<p class=\"header\">{{full_cat}} | {{full_cat_en}}</p>
@@ -13,9 +13,18 @@ afmt: "{{FrontSide}}<hr id=\"answer\">
         <p>en. {{manual_en}}</p>
         <p>
         <table class=\"table\">
-          <tr>
-            <td> (um) {{ÞF}} -- (frá) {{ÞGF}} -- (til) {{EF}} </td>
-          </tr>
+            <tr>
+              <td class=\"td\"> pos:</td>
+              <td>{{lemma}}</td>
+            </tr>
+            <tr>
+              <td class=\"td\"> cmpr:</td>
+              <td>{{MST}}</td>
+            </tr>
+            <tr>
+             <td class=\"td\"> sup:</td>
+             <td>{{EST}}</td>
+            </tr>
         </table>
         </p>
         <p class=\"header\">{{tier}}</p>"
