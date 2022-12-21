@@ -13,10 +13,10 @@
 \textphonetic{[\Sexpr{df$ipa_sd[i]}]} \\
 \Sexpr{lan}: \emph{\Sexpr{df$manual[i]}} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
-\makebox[0.9\cardwidth]{
+\resizebox{.8\cardwidth}{!}{
 \begin{tabular}{ll}
-\textsc{pos}: & \Sexpr{df$fst[i]} \\ 
-\textsc{comp}: & \Sexpr{df$mst[i]} \\ 
-\textsc{superl}: & \Sexpr{df$est[i]} \\
+\textsc{pos}: & \Sexpr{df$lo.fst[i]} \\ 
+\textsc{comp}: & \Sexpr{df$lo.mst[i]} \\ 
+\textsc{superl}: & \Sexpr{df$lo.est[i]} \\
 \end{tabular}}
 }

@@ -13,7 +13,7 @@
 \textphonetic{[\Sexpr{df$ipa_sd[i]}]} \\
 \Sexpr{lan}: \emph{\Sexpr{df$manual[i]}} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
-\makebox[0.9\cardwidth]{
+\resizebox{.8\cardwidth}{!}{
 \begin{tabular}{l l}
 \textsc{sg}: & (frá) \Sexpr{df$ÞGFET[i]} -- (til) \Sexpr{df$EFET[i]} \\ 
 \textsc{pl}: & (frá) \Sexpr{df$ÞGFFT[i]} -- (til) \Sexpr{df$EFFT[i]} \\

@@ -14,7 +14,7 @@
 \Sexpr{lan}: \emph{\Sexpr{df$manual[i]}} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{ll}
-\textsc{sg.dom.}: & \Sexpr{df$et[i]} \\ 
+\textsc{sg.nom.}: & \Sexpr{df$et[i]} \\ 
 \textsc{pl.nom.}: & \Sexpr{df$ft[i]}
 \end{tabular}
 }
