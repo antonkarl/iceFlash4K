@@ -81,7 +81,7 @@
 {}{}
 
 
-\usepackage[icelandic]{babel}
+\usepackage[icelandic, english]{babel}
 %\usepackage{fontspec}
 
 \usepackage{xeCJK}
@@ -114,11 +114,11 @@
 \newcommand{\frontcard}[1]{\textcolor{light-gray}{\colorbox{light-gray}{$#1$}}}
 \newcommand{\backcard}[1]{#1}
 
-%% add front logo
-\renewcommand{\flfoot}{\fboxsep=0pt {\begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=center, opacity=0.4] at (1.0, 0.5){%
-    \includegraphics[scale=0.18]{../logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
-}
+% %% add front logo
+% \renewcommand{\flfoot}{\fboxsep=0pt {\begin{tikzpicture}[remember picture, overlay]
+%     \node[anchor=center, opacity=0.4] at (1.0, 0.5){%
+%     \includegraphics[scale=0.18]{../logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
+% }
 % 
 % 
 % %% add back logo
@@ -1278,10 +1278,10 @@ zh.: \emph{理论上的} \\  [2ex]
 }
 
 %% Set front head & back foot for dfs
-\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Nafnorð | 名词}}
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | 名词}}
 \renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
-\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Nafnorð | 名词 }}
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | 名词 }}
 \renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
 
@@ -1477,10 +1477,10 @@ zh.: \emph{（因事故或疾病导致的）身体机能受损的人；无效} \
 }
 
 %% Set front head & back foot for dfs
-\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Lýsingarorð | 形容词}}
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Nafnorð | 形容词}}
 \renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
-\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Lýsingarorð | 形容词 }}
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Nafnorð | 形容词 }}
 \renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
 
@@ -5671,10 +5671,10 @@ zh.: \emph{休息} \\  [2ex]
 }
 
 %% Set front head & back foot for dfs
-\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Lýsingarorð | 形容词}}
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | 形容词}}
 \renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
-\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Lýsingarorð | 形容词 }}
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | 形容词 }}
 \renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
 
@@ -7089,7 +7089,7 @@ zh.: \emph{常规的} \\  [2ex]
 {Útköllin voru af ýmsum \textcolor{red}{\underline{toga}} , allt frá eignaspjöllum til innbrota. }}
 {togi \small{\textsubscript{(\textit{m.})}} \\[1ex] %% back side
 \textphonetic{[tʰɔijɪ]} \\
-zh.: \emph{} \\  [2ex]
+zh.: \emph{（通常用于多词表达，例如 'af ýmsum toga'，'af ólíkum toga'）某类，某种} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \resizebox{.8\cardwidth}{!}{
 \begin{tabular}{l l}
@@ -7382,10 +7382,10 @@ zh.: \emph{一小杯（烈酒）；子弹} \\  [2ex]
 }
 
 %% Set front head & back foot for dfs
-\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Atviksorð | 副词}}
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | 副词}}
 \renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
-\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Atviksorð | 副词 }}
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | 副词 }}
 \renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
 
@@ -9156,7 +9156,7 @@ zh.: \emph{意外的} \\  [2ex]
 
 %% card templates
 \card{\Large{árslok} \normalsize{\textsubscript{(\textit{n.})}} \\ [2ex]
-{Spáð er áframhaldandi lækkun íbúðaverðs til \textcolor{red}{\underline{ársloka}} 2010. }}
+{Spáð er áframhaldandi lækkun íbúðaverðs til \textcolor{red}{\underline{ársloka}} 2010 }}
 {árslok \small{\textsubscript{(\textit{n.})}} \\[1ex] %% back side
 \textphonetic{[aur̥stlɔk]} \\
 zh.: \emph{年底} \\  [2ex]
@@ -10101,7 +10101,7 @@ zh.: \emph{猎物，受害者} \\  [2ex]
 {Ef gerandi \textcolor{red}{\underline{sættir}} sig ekki við er nálgunarbanni beitt. }} 
 {sæta \small{\textsubscript{(\textit{v.})}} \\[1ex] %% back side
 \textphonetic{[saiːta]} \\
-zh.: \emph{} \\  [2ex]
+zh.: \emph{经历；可用于多次表达，'sætta sig við e-ð'：接受（条件、调和等）} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \begin{tabular}{p{1cm}l}
 \textsc{1sg}: & sæti -- sætti -- sætt \\ 
@@ -12374,10 +12374,10 @@ zh.: \emph{反复地} \\  [2ex]
 ítrekað (Indeclinable)}
 
 %% Set front head & back foot for dfs
-\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Sagnorð | 动词}}
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Nafnorð | 动词}}
 \renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
-\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Sagnorð | 动词 }}
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Nafnorð | 动词 }}
 \renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
 
@@ -12761,7 +12761,7 @@ zh.: \emph{歧视} \\  [2ex]
 {Hann er að vonum \textcolor{red}{\underline{sæll}} með dvöl sína í Feneyjum. }}
 {sæll \small{\textsubscript{(\textit{adj.})}} \\[1ex] %% back side
 \textphonetic{[saitl̥]} \\
-zh.: \emph{} \\  [2ex]
+zh.: \emph{你好；高兴，满意} \\  [2ex]
 \renewcommand*{\arraystretch}{0.8}
 \resizebox{.8\cardwidth}{!}{
 \begin{tabular}{ll}
@@ -13959,10 +13959,10 @@ zh.: \emph{道德，讯息} \\  [2ex]
 }
 
 %% Set front head & back foot for dfs
-\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Lýsingarorð | 形容词}}
+\renewcommand{\flhead}{\vskip5pt \fboxsep=0pt {\small\bfseries\footnotesize Nafnorð | 形容词}}
 \renewcommand{\fcfoot}{\vskip5pt \fboxsep=0pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
-\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Lýsingarorð | 形容词 }}
+\renewcommand{\blhead}{\vskip5pt {\small\bfseries\footnotesize Nafnorð | 形容词 }}
 \renewcommand{\bcfoot}{\vskip5pt \hspace{2pt}{\small\bfseries\footnotesize 3K}}
 
 
@@ -18095,7 +18095,7 @@ zh.: \emph{护士} \\  [2ex]
 
 %% card templates
 \card{\Large{kinn} \normalsize{\textsubscript{(\textit{f.})}} \\ [2ex]
-{Mönnum er að hlaupa kapp í \textcolor{red}{\underline{kinn}} . }}
+{Hann kyysti hana á \textcolor{red}{\underline{kinnina}} . }}
 {kinn \small{\textsubscript{(\textit{f.})}} \\[1ex] %% back side
 \textphonetic{[cʰɪn]} \\
 zh.: \emph{脸颊} \\  [2ex]

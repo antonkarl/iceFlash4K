@@ -55,11 +55,11 @@
 \newcommand{\frontcard}[1]{\textcolor{light-gray}{\colorbox{light-gray}{$#1$}}}
 \newcommand{\backcard}[1]{#1}
 
-%% add front logo
-\renewcommand{\flfoot}{\fboxsep=0pt {\begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=center, opacity=0.4] at (1.0, 0.5){%
-    \includegraphics[scale=0.18]{../logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
-}
+% %% add front logo
+% \renewcommand{\flfoot}{\fboxsep=0pt {\begin{tikzpicture}[remember picture, overlay]
+%     \node[anchor=center, opacity=0.4] at (1.0, 0.5){%
+%     \includegraphics[scale=0.18]{../logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
+% }
 % 
 % 
 % %% add back logo
@@ -131,19 +131,19 @@ lan <- "pl."
 
 for (i in 1:nrow(df)){
         if (!df$OBEYGJANLEGT[i] == ""){
-            out = c(out, knit_child('pron_st_pl/obeyg.rnw'))
+            out = c(out, knit_child('../templates/pdf/pl/obeyg.rnw'))
         } else if (df$bin_tag[i] == "so"){
-            out = c(out, knit_child('pron_st_pl/so.rnw'))
+            out = c(out, knit_child('../templates/pdf/pl/so.rnw'))
         } else if (df$bin_tag[i] == "afn"){
-            out = c(out, knit_child('pron_st_pl/afn.rnw'))
+            out = c(out, knit_child('../templates/pdf/pl/afn.rnw'))
         } else if (df$bin_tag[i] == "lo" & df$OBEYGJANLEGT[i] == ""){
-            out = c(out, knit_child('pron_st_pl/lo.rnw'))
+            out = c(out, knit_child('../templates/pdf/pl/lo.rnw'))
         } else if (df$bin_tag[i] == "ao"){
-            out = c(out, knit_child('pron_st_pl/ao.rnw'))
+            out = c(out, knit_child('../templates/pdf/pl/ao.rnw'))
         } else if (df$bin_tag[i] %in% c('kk', 'kvk', 'hk', 'pfn')){
-            out = c(out, knit_child('pron_st_pl/no_pfn.rnw'))
+            out = c(out, knit_child('../templates/pdf/pl/no_pfn.rnw'))
         } else if (df$bin_tag[i] %in% c('fn', 'gr', 'rt', 'to')){
-            out = c(out, knit_child('pron_st_pl/fn_gr_to.rnw'))
+            out = c(out, knit_child('../templates/pdf/pl/fn_gr_to.rnw'))
         } else {
             print(df[i,])
     }
