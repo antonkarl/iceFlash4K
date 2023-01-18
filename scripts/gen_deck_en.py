@@ -10,7 +10,7 @@ import yaml
 
 ## define file path
 project_dir = "."
-output_dir = os.path.abspath(".")
+output_dir = os.path.abspath("./flashcards/anki/")
 audio_dir = "./mp3files"
 
 ## always start from cwd

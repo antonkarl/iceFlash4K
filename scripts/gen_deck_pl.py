@@ -10,7 +10,7 @@ import yaml
 
 ## define file path
 project_dir = "."
-output_dir = os.path.abspath(".")
+output_dir = os.path.abspath("./flashcards/anki/")
 audio_dir = "./mp3files"
 
 ## always start from cwd
@@ -155,6 +155,6 @@ with open(tsvfile, "r", encoding="utf-8", errors="ignore") as file:
 os.chdir(audio_dir)
 main_pkg = genanki.Package(my_deck)
 main_pkg.media_files = mp3_names
-main_pkg.write_to_file(os.path.join(output_dir, "IceFlash4k_en_v2.apkg"))
+main_pkg.write_to_file(os.path.join(output_dir, "IceFlash4k_pl_v2.apkg"))
 os.chdir(project_dir)
 print("Finished {}".format(my_deck.name))
