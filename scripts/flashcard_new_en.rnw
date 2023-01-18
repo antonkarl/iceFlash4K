@@ -55,10 +55,10 @@
 \newcommand{\frontcard}[1]{\textcolor{light-gray}{\colorbox{light-gray}{$#1$}}}
 \newcommand{\backcard}[1]{#1}
 
-% %% add front logo
+%  %% add front logo
 % \renewcommand{\flfoot}{\fboxsep=0pt {\begin{tikzpicture}[remember picture, overlay]
 %     \node[anchor=center, opacity=0.4] at (1.0, 0.5){%
-%     \includegraphics[scale=0.18]{../logo/rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
+%     \includegraphics[scale=0.18]{rannsoknarstofa_logo_blackOnTransparent.png}}; \end{tikzpicture}}
 % }
 % 
 % 
@@ -130,59 +130,28 @@ pron.var <- 0     ## 0 without pron variations, 1 with
 
 lan <- "en."
 
-if (pron.var == 1){
-    # with pronunciation variation
-    for (i in 1:nrow(df)){
-        if(df$ipa_sd[i] == c(df$ipa_north[i], df$ipa_northeast[i], df$ipa_south[i])) {
-            if (df$OBEYGJANLEGT[i] != ""){
-                out = c(out, knit_child('pron_st/obeyg.rnw'))
-            } else if (df$conjugation[i] != ""){
-                out = c(out, knit_child('pron_st/general.rnw'))
-            } else if (df$bin_tag[i] == 'lo') {
-                out = c(out, knit_child('pron_st/lo.rnw'))
-            } else if (df$bin_tag[i] %in% c('fn', 'gr', 'rt', 'to')) {
-                out = c(out, knit_child('pron_st/fn_gr_to.rnw'))
-            } else {
-                print(df[i,])
-            }
-        } else {
-            if (df$OBEYGJANLEGT[i] != ""){
-                out = c(out, knit_child('pron_variation/obeyg.rnw'))
-            } else if (df$conjugation[i] != ""){
-                out = c(out, knit_child('pron_variation/general.rnw'))
-            } else if (df$bin_tag[i] == 'lo') {
-                out = c(out, knit_child('pron_variation/lo.rnw'))
-            } else if (df$bin_tag[i] %in% c('fn', 'gr', 'rt', 'to')) {
-                out = c(out, knit_child('pron_variation/fn_gr_to.rnw'))
-            } else {
-                print(df[i,])
-            }
-        }
-    
-    }
-} else {
+
     ## without pronunciation variation
     for (i in 1:nrow(df)){
             if (!df$OBEYGJANLEGT[i] == ""){
-                out = c(out, knit_child('pron_st_en/obeyg.rnw'))
+                out = c(out, knit_child('../templates/pdf/en/obeyg.rnw'))
             } else if (df$bin_tag[i] == "so"){
-                out = c(out, knit_child('pron_st_en/so.rnw'))
+                out = c(out, knit_child('../templates/pdf/en/so.rnw'))
             } else if (df$bin_tag[i] == "afn"){
-                out = c(out, knit_child('pron_st_en/afn.rnw'))
+                out = c(out, knit_child('../templates/pdf/en/afn.rnw'))
             } else if (df$bin_tag[i] == "lo" & df$OBEYGJANLEGT[i] == ""){
-                out = c(out, knit_child('pron_st_en/lo.rnw'))
+                out = c(out, knit_child('../templates/pdf/en/lo.rnw'))
             } else if (df$bin_tag[i] == "ao"){
-                out = c(out, knit_child('pron_st_en/ao.rnw'))
+                out = c(out, knit_child('../templates/pdf/en/ao.rnw'))
             } else if (df$bin_tag[i] %in% c('kk', 'kvk', 'hk', 'pfn')){
-                out = c(out, knit_child('pron_st_en/no_pfn.rnw'))
+                out = c(out, knit_child('../templates/pdf/en/no_pfn.rnw'))
             } else if (df$bin_tag[i] %in% c('fn', 'gr', 'rt', 'to')){
-                out = c(out, knit_child('pron_st_en/fn_gr_to.rnw'))
+                out = c(out, knit_child('../templates/pdf/en/fn_gr_to.rnw'))
             } else {
                 print(df[i,])
         }
         
     }   
-}
 
 @
 
