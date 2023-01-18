@@ -1,0 +1,26 @@
+## fn_gr_to
+name: '{{full_cat}}'
+
+qfmt: "<p class=\"header\">{{full_cat}} | {{full_cat_pl}}</p>
+        <h3>{{lemma}} <sub>(<i>{{bin_tag_en}}</i>)</sub></h3>
+        <p>{{pre_kw}} <u><font color='red'>{{kw}}</font></u> {{post_kw}}</p>
+        <p class=\"header\">{{tier}}</p>"
+        
+afmt: "{{FrontSide}}<hr id=\"answer\">
+        <p class=\"header\">{{full_cat}} | {{full_cat_pl}}</p>
+        <h3>{{lemma}} <sub>(<i>{{bin_tag_en}}</i>)</sub></h3>
+        <p>[{{ipa_sd}}] {{pronounce}} </p>
+        <p>pl. {{manual_pl}}</p>
+        <p>
+        <table class=\"table\">
+            <tr>
+              <td class=\"td\"> sg.nom.:</td>
+              <td> {{et}} </td>
+            </tr>
+            <tr>
+             <td class=\"td\"> pl.nom.:</td>
+             <td>{{ft}}</td>
+            </tr>
+        </table>
+        </p>
+        <p class=\"header\">{{tier}}</p>"
