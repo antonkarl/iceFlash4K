@@ -22,6 +22,11 @@ Genanki | MIT
 Knitr | GPL-2 | GPL-3
 Flacards | GNU General Public License
 
+Translation of the word list:
+ - English: Xindan Xu and Iðunn Kristínardóttir
+ - Polish: Veronika Teresa Kolka
+ - Ukranian: Alesia Kovalova
+ - Chinese: Xindan Xu
 
 # IceFlash 4K -- Leifturminniskort fyrir 4,000 algengustu orð íslenskrar tungu
 
@@ -47,3 +52,9 @@ Amazon Polly | AWS Customer Agreement
 Genanki | MIT 
 Knitr | GPL-2 | GPL-3
 Flacards | GNU General Public License
+
+Þýðing á orðalista:
+ - enska: Xindan Xu and Iðunn Kristínardóttir
+ - pólska: Veronika Teresa Kolka
+ - úkraínska: Alesia Kovalova
+ - kínverska: Xindan Xu
